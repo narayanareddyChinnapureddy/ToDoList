@@ -20,9 +20,27 @@
 			<h1>Welcome!!</h1>
 
 			<div class="card">
-				<input type="text" placeholder="Enter your task" />
-				<button>Add Task</button>
+				<div class="todo-input">
+					<input type="text" placeholder="Enter your task" id="inputTask" />
+					<button class="addBtn">Add Task</button>
+				</div>
+
+				<div class="todo-output">
+					<table cellspacing="0">
+						<thead>
+							<tr>
+								<th>S.No</th>
+								<th>Name</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody id="task-list"></tbody>
+					</table>
+				</div>
 			</div>
 		</section>
+
+		<!-- local script files -->
+		<script src="./index.js"></script>
 	</body>
 </html>
